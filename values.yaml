@@ -1,6 +1,6 @@
 environment: prod
 
-replicaCount: 4
+replicaCount: 2
 
 image:
   repository: myapp
