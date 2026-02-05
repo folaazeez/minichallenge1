@@ -1,0 +1,12 @@
+environment: prod
+
+replicaCount: 2
+
+image:
+  repository: myapp
+  tag: v1.2.0
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
