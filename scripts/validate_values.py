@@ -11,7 +11,7 @@ try:
     with open(yaml_file,"r") as f:
         values = yaml.safe_load(f) or {}
 except FileNotFoundError:
-    fail("values.yaml not found")
+    fail(f"{yaml_file} not found")
 except yaml.YAMLError as e:
     fail(f"Invalid YAML: {e}")
         
